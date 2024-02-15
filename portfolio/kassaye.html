@@ -7,41 +7,116 @@
     <link rel="stylesheet" href="/New CV/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- This is Nav bar -->
+      <nav class="navbar navbar-expand-lg bg-danger">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand text-light" href="#">KASSAYE SIYUM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link text-light" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link text-light" href="#Portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#Resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#Contact">Contact</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
+      <!-- This is hero section -->
+      <section class="hero bg-primary bg-gradient p-5" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pt-5">
+                    <p class="h1">Web <span class="text-light">developer</span></p>
+                    <p class="py-5 pe-5">I am a Computer Science graduate from Unity University with a CGPA of 3.60. Proficient in crafting visually appealing websites using front-end languages, I also possess a robust foundation in networking, including configuration and troubleshooting. Committed to responsibility and honesty, my objective is to contribute my skills to your esteemed firm. I approach tasks with diligence and aspire to be a valuable asset, ensuring utmost satisfaction in every duty.  </p>
+                    <a class="btn btn-danger px-3 mb-5" href="https://youtu.be/sBfzD3q5VDU">Learn more</a>
+
+                </div>
+                <div class="col-md-4 mt-5">
+                    <img class="img-thumbnail" src="/photo/em.webp" alt="">
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- This is about section -->
+      <section class="about bg-danger text-light text-center p-5" id="about">
+        <div class="container">
+            <h1 class="pb-5">About Us</h1>
+            <div class="row py-3">
+                <div class="col-md-6">
+                    <img src="/photo/kasu.jpg" alt="" class="rounded w-75">
+                </div>
+                <div class="col-md-6">
+                    <h3>Don't comment bad code - rewrite it</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde inventore eligendi voluptates repellat. Beatae tempore enim quibusdam modi natus temporibus culpa exercitationem mollitia laboriosam! Sunt est eos officia repellendus distinctio.</p>
+                    <h3>Don't comment bad code - rewrite it</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde inventore eligendi voluptates repellat. Beatae tempore enim quibusdam modi natus temporibus culpa exercitationem mollitia laboriosam! Sunt est eos officia repellendus distinctio.</p>
+              
+                </div>
+            </div>
+        </div>
+      </section>
+<!-- This is portfolio section -->
+      <section class=" bg-primary bg-gradient p-5 text-center text-light pb-5" id="Portfolio">
+      <div class="container">
+        <h1>Portfolio</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="/photo/4k2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="/photo/k.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="/photo/k1.jpg" class="card-img-top h-30" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+    </section>
+      <script src="/New CV/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
