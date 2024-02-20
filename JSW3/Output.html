@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/New CV/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
+    
     <h1>JavaScript Display Possibilities</h1>
     <h4>JavaScript can "display" data in different ways:</h4>
     <p> Writing into an HTML element, using innerHTML <br>
@@ -15,9 +17,14 @@
         <div style="border: 10px solid red; padding: 100px; margin-top: 100px;" >
             <p id="js1"></p>
             <script>
-                document.getElementById('js1').innerHTML=100+100
+                document.getElementById('js1').innerHTML=100+10000
             </script>
         </div>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary">Primary</button>
 
+       <button class="btn btn-primary" style="margin: 50px;" type="button" onclick="document.write(8+8)">Write BTN</button>
+<script src="/New CV/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
