@@ -11,5 +11,23 @@
     <br>
     <button style="margin: 50px; padding: 10px; background-color: aqua; border-radius: 10px;" onclick="this.innerHTML= Date()">DATE AND TIME</button>
     
+    <div style="background-color: aqua; margin: 30px;">
+        <p id="kai"></p>
+        <button onclick="havert()">func data and time </button>
+    <script>
+        function havert(){
+            document.getElementById("kai").innerHTML=Date();
+        }
+    </script>
+    </div>
+    <p id="eve"></p>
+    <button type="button" onmouseover="document.getElementById('eve').innerHTML=Date()">data and time </button>
+    <br style="margin: 50px;">
+    <button style="margin: 40px;" type="button" onmouseout="this.innerHTML=Date()">waren bafet</button>
+    <p id="text"></p>
+    <script>
+        var txt="abasdfghjkldghjkdghjvbnmhjklbhdbbfvfnfjhsdbbnfvv"
+        document.getElementById("text").innerHTML=txt.length
+    </script>    
 </body>
 </html>
