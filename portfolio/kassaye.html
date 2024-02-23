@@ -10,10 +10,10 @@
       <!-- This is Nav bar -->
       <nav class="navbar navbar-expand-lg bg-danger fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">KASSAYE SIYUM</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <a class="navbar-brand text-light" href="#" style="background-image: url('/photo/4k.png'); background-size: contain; background-repeat: no-repeat; padding-left: 50px;">
+            Portfolio
+        </a>
+          
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
@@ -38,17 +38,31 @@
       <!-- This is hero section -->
       <section class="hero bg-primary bg-gradient p-5" id="hero">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 pt-5">
-                    <p class="h1">Web <span class="text-light">developer</span></p>
-                    <p class="py-5 pe-5">I am a Computer Science graduate from Unity University with a CGPA of 3.60. Proficient in crafting visually appealing websites using front-end languages, I also possess a robust foundation in networking, including configuration and troubleshooting. Committed to responsibility and honesty, my objective is to contribute my skills to your esteemed firm. I approach tasks with diligence and aspire to be a valuable asset, ensuring utmost satisfaction in every duty.  </p>
-                    <a class="btn btn-danger px-3 mb-5" href="https://youtu.be/sBfzD3q5VDU">Learn more</a>
-
-                </div>
-                <div class="col-md-4 mt-5">
-                    <img class="img-thumbnail" src="/photo/susu.jpg" alt="">
-                </div>
+          <div class="row">
+            <div class="col-md-6 pt-5">
+                <h2 class="display-4 fw-bold text-light text-opacity-75">Hello, I'm Kassaye</h2>
+                <p class="h1 text-light">Web <span class="fw-bold">Developer</span></p>
+                <p class="py-4 pe-5 text-white">My name is Kassaye Siyum, and I am a Frontend Developer and Data Center Engineer with over 2 years of experience. I bring also a passion for crafting visually appealing websites using front-end languages, along with a robust foundation in networking, including configuration and troubleshooting.</p>
+                <button class="btn btn-light px-3 py-2 mb-5" onclick="handleButtonClick(this)">Learn more</button>
             </div>
+            <div class="col-md-4 mt-5">
+                <img class="img-fluid rounded-circle" src="/photo/susu.jpg" alt="Kassaye Seyoum">
+            </div>
+        </div>
+        
+        <script>
+            function handleButtonClick(button) {
+                // Change the text of the button
+                button.innerHTML = "Eager to contribute my skills to your esteemed firm, I am dedicated to responsibility and honesty, ensuring diligent task fulfillment. Given the opportunity, I aim to be a valuable asset, delivering utmost satisfaction in my duties.";
+                
+                // Optionally, you can add more styling or other actions here
+            }
+        </script>
+        
+        
+        
+        
+        
         </div>
       </section>
       <!-- This is about section -->

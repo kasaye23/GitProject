@@ -1,0 +1,54 @@
+.elementor-kit-365 {
+    --e-global-color-primary: rgb(10, 197, 87);
+    --e-global-color-secondary: rgb(10, 197, 87);
+    --e-global-color-text: #000000;
+    --e-global-color-accent: rgb(10, 197, 87);
+    --e-global-color-0a7a205: #000000;
+    --e-global-color-203b7c7: #00ff96;
+    --e-global-color-4fe1a49: #ffffff;
+    --e-global-color-6cb3476: #FFFFFF;
+    --e-global-typography-primary-font-family: "Red Hat Display";
+    --e-global-typography-secondary-font-family: "Red Hat Display";
+    --e-global-typography-text-font-family: "Montserrat";
+    --e-global-typography-accent-font-family: "Montserrat";
+}
+
+.elementor-section.elementor-section-boxed>.elementor-container {
+    max-width: 1140px;
+}
+
+.e-con {
+    --container-max-width: 1140px;
+}
+
+.elementor-widget:not(:last-child) {
+    margin-block-end: 20px;
+}
+
+.elementor-element {
+    --widgets-spacing: 20px 20px;
+}
+
+{}
+
+h1.entry-title {
+    display: var(--page-title-display);
+}
+
+@media(max-width:1023px) {
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 1024px;
+    }
+    .e-con {
+        --container-max-width: 1024px;
+    }
+}
+
+@media(max-width:767px) {
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 767px;
+    }
+    .e-con {
+        --container-max-width: 767px;
+    }
+}
