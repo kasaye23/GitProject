@@ -6,14 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="/New CV/node_modules/bootstrap/dist/css/bootstrap.min.css">
   <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
   </head>
 <body>
       <!-- This is Nav bar -->
       <nav class="navbar navbar-expand-lg bg-danger fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#" style="background-image: url('/photo/4k.png'); background-size: contain; background-repeat: no-repeat; padding-left: 50px;">
-            Portfolio
+          <a class="navbar-brand text-light" href="#" style="background-size: contain; background-repeat: no-repeat; padding-left: 15px; display: flex; align-items: center;">
+            <img src="/photo/po.png" alt="Logo" style="width: 40px; height: 40px; border-radius: 1px; margin-right: 10px;">
+            <span style="font-family: 'Your-Font-Name', sans-serif; font-weight: bold">Portfolio</span>
         </a>
+        
           
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -37,18 +40,25 @@
         </div>
       </nav>
       <!-- This is hero section -->
-      <section class="hero bg-primary bg-gradient p-5" id="hero">
+      <section class="hero bg-primary bg-gradient" id="hero" style="padding: 4rem">
         <div class="container">
           <div class="row">
             <div class="col-md-6 pt-5">
                 <h2 class="display-4 fw-bold text-light text-opacity-75">Hello, I'm Kassaye</h2>
                 <p class="h1 text-light">Web <span class="fw-bold">Developer</span></p>
                 <p class="py-4 pe-5 text-white">My name is Kassaye Siyum, and I am a Frontend Developer and Data Center Engineer with over 2 years of experience. I bring also a passion for crafting visually appealing websites using front-end languages, along with a robust foundation in networking, including configuration and troubleshooting.</p>
-                <button class="btn btn-light px-3 py-2 mb-5" onclick="handleButtonClick(this)">Learn more</button>
+               <p id="sam1"></p>
+               <button class="btn btn-light px-3 py-2 mb-5" onclick="document.getElementById('sam1').innerHTML='<span style=\'color: white;\'>Eager to contribute my skills to your esteemed firm, I am dedicated to responsibility and honesty, ensuring diligent task fulfillment. Given the opportunity, I aim to be a valuable asset, delivering utmost satisfaction in my duties.</span>';">Learn more</button>
+
+               
             </div>
             <div class="col-md-4 mt-5">
-                <img class="img-fluid rounded-circle" src="/photo/susu.jpg" alt="Kassaye Seyoum">
-            </div>
+              <div class="image-container">
+                  <img class="img-fluid custom-rectangle-img" src="/photo/susu.jpg" alt="Kassaye Seyoum">
+              </div>
+          </div>
+          
+          
         </div>
         </div>
       </section>

@@ -1,0 +1,28 @@
+
+  .navbar-nav .nav-item:hover {
+    background-color: #1d97a9; /* Set your desired background color on hover */
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #838278; /* Set your desired text color on hover */
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s ease-in-out;
+  }
+
+  .custom-rectangle-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .image-container:hover {
+    border-color: #3498db; /* Change to your desired border color */
+  }
+
+
