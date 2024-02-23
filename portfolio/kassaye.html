@@ -66,54 +66,60 @@
       </section>
       <!-- This is about section -->
       <style>
-        .about-divider {
-            border-right: 1px solid #ddd; /* Vertical line color */
-            height: 100%;
+        .card {
+          height: 100%; /* Set a specific height for all cards in the row */
         }
-    </style>
-    
-    <section class="about bg-success p-2 text-dark bg-opacity-50 text-center p-5" id="about">
-        <div class="container">
-            <h1 class="pb-4">About Me</h1>
-            <div class="row py-4">
-                <div class="col-md-6 about-divider text-md-left mb-4">
-                    <h2>👋 Hello!</h2>
-                    <p>I’m a passionate web developer and data center engineer with 2 years of experience. I thrive on turning ideas into functional, user-friendly websites and ensuring the smooth operation of critical infrastructure.</p>
-    
-                    <h2>My Journey</h2>
-                    <ul style="list-style-type: square;">
-                        <li>🎓 Graduated from Unity University with a CGPA of 3.60.</li>
-                        <li>💼 Currently working at Convergence IT Solution.</li>
-                    </ul>
-    
-                    <h2>What I Do</h2>
-                    <h3>Web Development</h3>
-                    <ul style="list-style-type: square;">
-                        <li>🌐 Create elegant websites using HTML, CSS, JavaScript, and frameworks like React and Vue.js.</li>
-                        <li>🎨 Design intuitive user interfaces to enhance the overall user experience.</li>
-                        <li>🚀 Front-end or full-stack development, I’m up for the challenge!</li>
-                    </ul>
-                </div>
-                <div class="col-md-6 text-md-left">
-                    <h2>Data Center Engineering</h2>
-                    <ul style="list-style-type: square;">
-                        <li>🔌 Wear multiple hats in the data center world.</li>
-                        <li>🌐 Expertise in configuring switches, routers, optimizing server performance, virtualization, cloud technologies, and security best practices.</li>
-                    </ul>
-    
-                    <h2>Beyond Work</h2>
-                    <ul style="list-style-type: square;">
-                        <li>🌟 Passionate about exploring the great outdoors.</li>
-                        <li>📚 Lifelong learner, always eager to dive into new technologies and expand my skill set.</li>
-                    </ul>
-    
-                    <h2>Let’s Connect!</h2>
-                    <p>Feel free to reach out via email or connect with me on LinkedIn. I’m open to collaboration, discussions, and new opportunities!</p>
+      </style>
+
+<section style="background-color: rgb(21, 150, 205);" class="about pt-2 text-dark bg-opacity-50 text-center p-5" id="about">
+  <div class="container">
+      <h1 class="p-5 display-4 fw-bold text-light">About Me</h1>
+      <div class="row mb-5">
+          <div class="col-md-6">
+              <div class="card border-success mb-3" style="max-width: 30rem;"> <!-- Updated max-width to 24rem -->
+                  <div class="card-header bg-transparent border-success"> </div>
+                  <div class="card-body text-success">
+                      <h5 class="card-title">Versatile Web Developer and Data Center Engineer:</h5>
+                      <p class="card-text">I'm a passionate web developer and data center engineer with 2 years of experience. I thrive on turning ideas into functional, user-friendly websites and ensuring the smooth operation of critical infrastructure.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="card border-success mb-3" style="max-width: 30rem;"> <!-- Updated max-width to 24rem -->
+                  <div class="card-header bg-transparent border-success">Header</div>
+                  <div class="card-body text-success">
+                      <h5 class="card-title">Success card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                 
+              </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+            <div class="card border-success mb-3" style="max-width: 30rem;"> <!-- Updated max-width to 24rem -->
+                <div class="card-header bg-transparent border-success">Header</div>
+                <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </div>
-    </section>
-    
+        <div class="col-md-6">
+            <div class="card border-success mb-3" style="max-width: 30rem;"> <!-- Updated max-width to 24rem -->
+                <div class="card-header bg-transparent border-success">Header</div>
+                <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
       
       <!-- This is portfolio Section -->
       <section class="Portfolio bg-primary bg-gradient py-5 text-center " id="Portfolio">
