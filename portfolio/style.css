@@ -10,7 +10,7 @@
   /* Custom styles for carousel controls */
   .carousel-control-prev,
   .carousel-control-next {
-      background-color: red; /* Replace 'your-color' with the desired color code */
+      background-color: rgb(240, 211, 212); /* Replace 'your-color' with the desired color code */
   }
 
   /* Custom styles for the carousel control icons (optional) */
