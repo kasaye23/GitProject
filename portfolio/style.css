@@ -7,3 +7,15 @@
     color: #838278; /* Set your desired text color on hover */
   }
   
+  /* Custom styles for carousel controls */
+  .carousel-control-prev,
+  .carousel-control-next {
+      background-color: red; /* Replace 'your-color' with the desired color code */
+  }
+
+  /* Custom styles for the carousel control icons (optional) */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+      filter: invert(1); /* Invert the color of the default icons (optional) */
+  }
+
