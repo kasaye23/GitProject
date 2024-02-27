@@ -3,60 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        form {
-            background-color: #add8e6; /* Light Blue Background */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #4caf50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #ce2e53;
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="/New CV/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-
-        <button type="submit">Login</button>
-    </form>
+    <!-- This is Nav bar -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#" style="background-size: contain; background-repeat: no-repeat; padding-left: 15px; display: flex; align-items: center;">
+                <img src="/photo/po.png" alt="Logo" style="width: 40px; height: 40px; border-radius: 1px; margin-right: 10px;">
+                <span style="font-family: 'Your-Font-Name', sans-serif; font-weight: bold">Portfolio</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#skills"> Skills </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- This is hero section -->
+    <section class="hero bg-primary bg-gradient text-white" id="hero" style="padding: 4rem">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pt-5">
+                    <h2 class="display-4 fw-bold">Hello, I'm Kassaye</h2>
+                    <p class="h1">Web <span class="fw-bold">Developer</span></p>
+                    <p class="py-4 pe-5">My name is Kassaye Siyum, and I am a Frontend Developer and Data Center Engineer with over 2 years of experience. I bring also a passion for crafting visually appealing websites using front-end languages, along with a robust foundation in networking, including configuration and troubleshooting.</p>
+                    <p id="sam1"></p>
+                    <button class="btn btn-light px-3 py-2 mb-5" onclick="document.getElementById('sam1').innerHTML='<span style=\'color: white;\'>Eager to contribute my skills to your esteemed firm, I am dedicated to responsibility and honesty, ensuring diligent task fulfillment. Given the opportunity, I aim to be a valuable asset, delivering utmost satisfaction in my duties.</span>';">Learn more</button>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="image-container">
+                        <img class="img-fluid custom-rectangle-img" src="/photo/susu.jpg" alt="Kassaye Seyoum" style="border-radius: 10px; transition: transform 0.3s ease-in-out;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- This is about section -->
+    <style>
+        .card {
+            height: 100%; /* Set a specific height for all cards in the row */
+        }
+    </style>
+    <section style="background-color: #1596cd;" class="about pt-2 text-dark bg-opacity-50 text-center p-5" id="about">
+        <div class="container">
+            <h1 class="p-5 display-6 fw-bold text-white">About Me</h1>
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="card border-success mb-3" style="max-width: 30rem;">
+                        <div class="card-header bg-transparent border-success" style="text-align: left; font-weight: bold;">My Journey</div>
+                        <div class="card-body text-success" style="text-align: justify;">
+                            <h5 class="card-title" style="color: blue;">Academic Achievement and Professional Growth</h5>
+                            <ul style="list-style-type: square; color: rgb(24, 23, 27); font-style: italic;font-size: 16px;">
+                                <li>Graduating from Unity University Adama Special Campus in September 2022 with a Bachelor of Science (B.Sc) degree in Computer Science and a commendable CGPA of 3.60, I honed my skills in web development, networking, and system administration, paving the way for a dynamic professional journey.</li>
+                                <li>Currently, I navigate a dual role as a Front-End Developer and Data Center Engineer at Convergence IT Solutions, actively contributing to dynamic projects and collaborating with talented teams.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-success mb-3" style="max-width: 30rem;">
+                        <div class="card-header bg-transparent border-success" style="text-align: left; font-weight: bold;">What I Do</div>
+                        <div class="card-body text-success" style="text-align: justify;">
+                            <h5 class="card-title" style="color: blue;">Dynamic Web Developer and DC Engineer</h5>
+                            <ul style="list-style-type: square; color: rgb(24, 23, 27); font-style: italic; font-size: 16px;">
+                                <li> I'm a passionate web developer and data center engineer with 2 years of experience. I thrive on turning ideas into functional, user-friendly websites and ensuring the smooth operation of critical infrastructure.</li>
+                                <li>As a web developer, I create elegant and efficient websites using HTML, CSS, JavaScript, and frameworks like React and Vue.js. I love designing intuitive user interfaces that enhance the overall user experience. Whether it's front-end or full-stack development, I'm up for the challenge!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- This is skills Section -->
+    <section class="skills bg-primary bg-gradient py-5 text-center " id="skills">
+        <div class="container">
+            <h1 class="mb-5 display-6 fw-bold text-white">My Skills</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-light mb-3" style="max-width: 20rem;">
+                        <div class="card-header bg-transparent border-light" style="text-align: left; font-weight: bold;">Front-End Development</div>
+                        <div class="card-body text-light">
+                            <h5 class="card-title" style="color: #17a2b8;">Languages & Frameworks</h5>
+                            <ul style="list-style-type: circle; color: rgb(255, 255, 255); font-size: 16px;">
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>React, Vue.js</li>
+                                <li>Bootstrap, Tailwind CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-light mb-3" style="max-width: 20rem;">
+                        <div class="card-header bg-transparent border-light" style="text-align: left; font-weight: bold;">Data Center Engineering</div>
+                        <div class="card-body text-light">
+                            <h5 class="card-title" style="color: #17a2b8;">Skills & Expertise</h5>
+                            <ul style="list-style-type: circle; color: rgb(255, 255, 255); font-size: 16px;">
+                                <li>Data Center Design</li>
+                                <li>Network Configuration</li>
+                                <li>Server Maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-light mb-3" style="max-width: 20rem;">
+                        <div class="card-header bg-transparent border-light" style="text-align: left; font-weight: bold;">Soft Skills</div>
+                        <div class="card-body text-light">
+                            <h5 class="card-title" style="color: #17a2b8;">Effective Traits</h5>
+                            <ul style="list-style-type: circle; color: rgb(255, 255, 255); font-size: 16px;">
+                                <li>Team Collaboration</li>
+                                <li>Problem-Solving</li>
+                                <li>Effective Communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- This is Certifications Section -->
+    <section style="background-color: #1596cd;" class="Certifications pt-2 text-dark bg-opacity-50 text-center p-5" id="Certifications">
+        <div class="container">
+            <h1 class="p-5 display-6 fw-bold text-white">Certifications</h1>
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="card border-success mb-3" style="max-width: 30rem;">
+                        <div class="card-header bg-transparent border-success" style="text-align: left; font-weight: bold;">Web Development</div>
+                        <div class="card-body text-success" style="text-align: justify;">
+                            <h5 class="card-title" style="color: blue;">Front-End Development</h5>
+                            <ul style="list-style-type: square; color: rgb(24, 23, 27); font-style: italic;font-size: 16px;">
+                                <li>React - The Complete Guide (incl Hooks, React Router, Redux)</li>
+                                <li>Vue - The Complete Guide (w/ Router, Vuex, Composition API)</li>
+                                <li>Bootstrap 4 - Responsive Web Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-success mb-3" style="max-width: 30rem;">
+                        <div class="card-header bg-transparent border-success" style="text-align: left; font-weight: bold;">Networking</div>
+                        <div class="card-body text-success" style="text-align: justify;">
+                            <h5 class="card-title" style="color: blue;">Cisco Certified Network Associate (CCNA)</h5>
+                            <p style="color: rgb(24, 23, 27); font-style: italic;font-size: 16px;">Certified in routing and switching, addressing security concerns, and troubleshooting networks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- This is Contact Section -->
+    <section class="Contact bg-primary bg-gradient py-5 text-center" id="Contact">
+        <div class="container">
+            <h1 class="mb-5 display-6 fw-bold text-white">Contact Me</h1>
+            <form>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label text-light">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-light">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-light">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- This is Footer Section -->
+    <section class="footer bg-dark text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted">© 2024 Your Portfolio. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-icons">
+                        <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
