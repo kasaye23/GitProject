@@ -31,6 +31,9 @@
                 <a class="nav-link text-light" href="#Certifications">Certifications</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link text-light" href="#Project">Project</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link text-light" href="#Contact">Contact</a>
               </li>
             </ul>
@@ -46,7 +49,7 @@
                 <p class="h1 text-light">Web <span class="fw-bold">Developer</span></p>
                 <p class="py-4 pe-5 text-white">My name is Kassaye Siyum, and I am a Frontend Developer and Data Center Engineer with over 2 years of experience. I bring also a passion for crafting visually appealing websites using front-end languages, along with a robust foundation in networking, including configuration and troubleshooting.</p>
                <p id="sam1"></p>
-               <button class="btn btn-light px-3 py-2 mb-5" onclick="document.getElementById('sam1').innerHTML='<span style=\'color: white;\'>Eager to contribute my skills to your esteemed firm, I am dedicated to responsibility and honesty, ensuring diligent task fulfillment. Given the opportunity, I aim to be a valuable asset, delivering utmost satisfaction in my duties.</span>';">Learn more</button>
+               <button class="btn btn-light px-3 py-2 mb-5" onclick="document.getElementById('sam1').innerHTML='<span style=\'color: white;\'>As A Web Developer, I Am Responsible For Designing And Developing Web Pages.My Primary Focus Is To Create Responsive, User-Friendly Experiences That Meet The Needs Of A Diverse Online Audience.</span>';">Learn more</button>
 
                
             </div>
@@ -381,57 +384,111 @@
      <!-- This is Download CV Section -->
 
 
-      <!-- This is Projects Section -->
-
-<section class="Projects bg-light py-5 text-center" id="Projects">
+    <!-- Projects Section -->
+<section class="projects-section bg-light py-5 text-center" id="projects">
   <div class="container">
-    <h1 class="pb-5 display-6 fw-bold">Projects</h1>
+    <h2 class="display-4 fw-bold mb-5">Featured Projects</h2>
 
-    <!-- Project 1 -->
-    <div class="project-card">
-      <h2 class="project-title">Project Title 1</h2>
-      <p class="project-description">Revolutionary project leveraging cutting-edge technologies to address specific industry challenges. Explore key features and solutions.</p>
-      <a href="#" class="btn btn-primary">View Project</a>
+    <!-- Project Cards -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Project 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <!-- Project Image Carousel -->
+          <!-- ... (your carousel code) -->
+          <div class="card-body">
+            <h5 class="card-title">Project Title 1</h5>
+            <p class="card-text">Revolutionizing industry challenges with cutting-edge technologies and innovative solutions.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <!-- Project Image Carousel -->
+          <!-- ... (your carousel code) -->
+          <div class="card-body">
+            <h5 class="card-title">Project Title 2</h5>
+            <p class="card-text">Addressing unique challenges in a specific domain with groundbreaking functionalities.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <!-- Project Image Carousel -->
+          <!-- ... (your carousel code) -->
+          <div class="card-body">
+            <h5 class="card-title">Project Title 3</h5>
+            <p class="card-text">Redefined a particular domain, showcasing uniqueness and positive outcomes.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Project 2 -->
-    <div class="project-card">
-      <h2 class="project-title">Project Title 2</h2>
-      <p class="project-description">Innovative solution for a unique industry/domain, with key functionalities designed to tackle specific challenges.</p>
-      <a href="#" class="btn btn-primary">View Project</a>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="project-card">
-      <h2 class="project-title">Project Title 3</h2>
-      <p class="project-description">Project that redefines a particular area/domain, showcasing unique aspects and positive outcomes.</p>
-      <a href="#" class="btn btn-primary">View Project</a>
-    </div>
-
+    
     <!-- Additional Projects -->
+    <div class="row mt-4">
+      <!-- Project 4, 5, 6 -->
+      <!-- ... (your additional projects) -->
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<!-- Contact Section -->
+<section class="contact-section bg-light py-5 text-center" id="contact">
+  <div class="container">
+    <h2 class="display-4 fw-bold mb-5">Contact Me</h2>
+
     <div class="row">
-
-      <!-- Project 4 -->
-      <div class="project-card">
-        <h2 class="project-title">Project Title 4</h2>
-        <p class="project-description">Impactful project redefining an industry/domain with innovative elements and contributions to positive outcomes.</p>
-        <a href="#" class="btn btn-primary">View Project</a>
+      <!-- Contact Information -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-header bg-info text-white">
+            Contact Info
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Phone: 0934871443</li>
+            <li class="list-group-item">Email: kassayeseyoum0@gmail.com</li>
+            <li class="list-group-item">Address: Eyesus 41, Addis Ababa</li>
+          </ul>
+        </div>
       </div>
 
-      <!-- Project 5 -->
-      <div class="project-card">
-        <h2 class="project-title">Project Title 5</h2>
-        <p class="project-description">Project showcasing key functionalities, addressing critical challenges, and demonstrating a commitment to meaningful change.</p>
-        <a href="#" class="btn btn-primary">View Project</a>
-      </div>
+      <!-- Contact Form -->
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header bg-info text-white">
+            Contact Form
+          </div>
+          <div class="card-body">
+            <form action="" method="post">
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name:</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+              </div>
 
-      <!-- Project 6 -->
-      <div class="project-card">
-        <h2 class="project-title">Project Title 6</h2>
-        <p class="project-description">Explore the realm of a specific domain with a project featuring unique features and solutions aimed at enhancing user experiences.</p>
-        <a href="#" class="btn btn-primary">View Project</a>
-      </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
 
+              <div class="mb-3">
+                <label for="comment" class="form-label">Comment:</label>
+                <textarea class="form-control" id="comment" name="comment" rows="5" placeholder="Write your comment here" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-success">Send Comment</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
