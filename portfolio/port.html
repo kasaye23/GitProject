@@ -1,95 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Web Developer</title>
+    <title>Contact Form</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 1em;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1,
-        h2,
-        h3 {
-            color: #333;
-        }
-
-        h1 {
-            margin-bottom: 0.5em;
-        }
-
-        .project {
-            margin-bottom: 2em;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #333;
-            color: #fff;
-        }
+        /* Add your CSS styles here */
     </style>
 </head>
-
 <body>
 
-    <header>
-        <h1>Your Name</h1>
-        <p>Web Developer</p>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio! I am a passionate web developer with expertise in front-end and back-end technologies.</p>
-        <p>Skills: HTML, CSS, JavaScript, React, Node.js, Express, etc.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Project Title 1</h3>
-            <p>Description of the project. Briefly explain the technologies used and the problem solved.</p>
-            <p><a href="#">View Project</a></p>
+<section class="contact-section bg-primary bg-gradient py-5" id="contact">
+    <div class="container">
+        <h1 class="pb-2 display-6 fw-bold text-white text-center">Contact As</h1>
+        <h1 class="pb-3 display-6 fw-bold text-white"></h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem; height: 10.5rem;">
+                    <div class="card-header bg-warning">
+                        Contact as
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Phone: 0934871443</li>
+                        <li class="list-group-item">Email: kassayeseyoum0@gmail</li>
+                        <li class="list-group-item">Address: Eyesus 41, Addis Ababa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card border-warning" style="border-width: 10px;">
+                    <div class="card-header bg-warning border-success">
+                        Contact Form
+                    </div>
+                    <div class="card-body">
+                        <form action="https://formspree.io/your_email@example.com" method="POST" id="contactForm">
+                            <label for="fullName">Full Name :</label><br>
+                            <input class="form-control" type="text" name="fullName" id="fullName" required><br>
+                            <label for="email">Email :</label><br>
+                            <input class="form-control" type="email" name="email" id="email" required><br>
+                            <label for="comment">Comment</label><br>
+                            <textarea class="form-control" name="comment" id="comment" rows="5" cols="50" required></textarea>
+                            <br>
+                            <button class="btn btn-success" type="submit">Send Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+</section>
 
-        <div class="project">
-            <h3>Project Title 2</h3>
-            <p>Description of the project. Briefly explain the technologies used and the problem solved.</p>
-            <p><a href="#">View Project</a></p>
-        </div>
-    </section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var contactForm = document.getElementById("contactForm");
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to contact me for job opportunities or collaborations.</p>
-        <p>Email: your.email@example.com</p>
-    </section>
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
 
-    <footer>
-        <p>&copy; 2024 Your Name - Web Developer</p>
-    </footer>
+            // Submit the form to Formspree
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", contactForm.action, true);
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState !== 4) return;
+                if (xhr.status === 200 || xhr.status === 201) {
+                    // Successful submission, you can display a success message
+                    console.log("Form submitted successfully");
+                    contactForm.reset();
+                } else {
+                    // Handle errors or display an error message
+                    console.error("Error submitting the form");
+                }
+            };
+
+            // Collect form data
+            var formData = new FormData(contactForm);
+            xhr.send(formData);
+        });
+    });
+</script>
 
 </body>
-
 </html>
