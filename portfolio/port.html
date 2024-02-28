@@ -33,7 +33,7 @@
                         Contact Form
                     </div>
                     <div class="card-body">
-                        <form action="https://formspree.io/your_email@example.com" method="POST" id="contactForm">
+                        <form action="https://formspree.io/kassayeseyoum0@gmail.com" method="POST" id="contactForm">
                             <label for="fullName">Full Name :</label><br>
                             <input class="form-control" type="text" name="fullName" id="fullName" required><br>
                             <label for="email">Email :</label><br>
@@ -43,6 +43,7 @@
                             <br>
                             <button class="btn btn-success" type="submit">Send Comment</button>
                         </form>
+                        <div id="feedbackMessage" style="margin-top: 10px;"></div>
                     </div>
                 </div>
             </div>
@@ -53,6 +54,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         var contactForm = document.getElementById("contactForm");
+        var feedbackMessage = document.getElementById("feedbackMessage");
 
         contactForm.addEventListener("submit", function (event) {
             event.preventDefault();
@@ -64,12 +66,12 @@
             xhr.onreadystatechange = function () {
                 if (xhr.readyState !== 4) return;
                 if (xhr.status === 200 || xhr.status === 201) {
-                    // Successful submission, you can display a success message
-                    console.log("Form submitted successfully");
+                    // Successful submission
+                    feedbackMessage.innerHTML = "<p class='text-success'>Form submitted successfully!</p>";
                     contactForm.reset();
                 } else {
-                    // Handle errors or display an error message
-                    console.error("Error submitting the form");
+                    // Handle errors
+                    feedbackMessage.innerHTML = "<p class='text-danger'>Error submitting the form. Please try again later.</p>";
                 }
             };
 
