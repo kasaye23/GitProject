@@ -41,16 +41,17 @@
 }
 
 /* Add these styles to your CSS file or style section */
-
 .kidest {
   text-decoration: none; /* Remove underline */
   color: #ffffff; /* Set the text color */
   transition: color 0.3s ease; /* Add transition for smooth color change */
 }
 
-.kidest:hover {
-  color: #ffcc00; /* Change color on hover */
+.kidest:hover,
+.kidest:focus {
+  color: #ffcc00; /* Change color on hover or focus */
 }
+
 
 
 
