@@ -18,4 +18,28 @@
   .carousel-control-next-icon {
       filter: invert(1); /* Invert the color of the default icons (optional) */
   }
+  
+  .social-icon {
+    font-size: 1.5rem; /* Adjust the size of the icons as needed */
+    margin-right: 1px; /* Adjust spacing between icons if necessary */
+}
+
+.social-icon-github {
+    color: #f10505; /* GitHub icon color */
+}
+
+.social-icon-linkedin {
+    color: #fb0808; /* LinkedIn icon color */
+}
+
+.social-icon-facebook {
+    color: #3b5998; /* Facebook icon color */
+}
+
+.social-icon-telegram {
+    color: #0088cc; /* Telegram icon color */
+}
+
+
+
 
