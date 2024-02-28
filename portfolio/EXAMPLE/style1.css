@@ -1,0 +1,22 @@
+
+    .social-icon {
+        font-size: 2rem; /* Adjust the size of the icons as needed */
+        margin-right: 15px; /* Adjust spacing between icons if necessary */
+    }
+
+    .social-icon-github {
+        color: #333; /* GitHub icon color */
+    }
+
+    .social-icon-linkedin {
+        color: #0077b5; /* LinkedIn icon color */
+    }
+
+    .social-icon-facebook {
+        color: #3b5998; /* Facebook icon color */
+    }
+
+    .social-icon-telegram {
+        color: #0088cc; /* Telegram icon color */
+    }
+
