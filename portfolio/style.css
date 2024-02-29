@@ -52,6 +52,22 @@
   color: #ffcc00; /* Change color on hover or focus */
 }
 
+/* Customize carousel control buttons */
+.carousel-control-prev.kasu,
+.carousel-control-next.kasu {
+    background-color: rgb(213, 244, 229); /* Set your desired background color */
+    color: white; /* Set your desired text color */
+    border: 1px solid rgb(181, 220, 181); /* Set your desired border color */
+    border-radius: 10%; /* Make it circular if desired */
+}
+
+/* Customize the hover effect for the buttons */
+.carousel-control-prev.kasu:hover,
+.carousel-control-next.kasu:hover {
+    background-color: red; /* Set your desired hover background color */
+    color: wheat; /* Set your desired hover text color */
+}
+
 
 
 
