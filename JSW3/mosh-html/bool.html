@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="add.js"></script>
     <script>
         function love(){
             document.getElementById('susu').innerHTML=" love baby"
@@ -12,7 +13,10 @@
             document.getElementById('susu').innerHTML=""
         }
 
-
+        function kassaye() {
+        var J = confirm("Do you want to proceed?");
+        document.getElementById('con').innerHTML = J
+    }
     </script>
 </head>
 <body>
@@ -74,13 +78,18 @@ onmouseout="lovee()"
 
 
 <p id="con"></p>
-<script>
-    function kassaye() {
-        var result = confirm("Do you want to proceed?");
-        document.getElementById('con').innerHTML = result ? "User clicked OK!" : "User clicked Cancel!";
-    }
-</script>
+
 <button type="button" onmouseover="kassaye()">confirm</button>
+<p id="sum"></p>
+
+
+<script>
+    document.getElementById('sum').innerHTML="The Sum of a and b is "+c;
+</script>
+    
+
+
+
 
 </body>
 </html>
