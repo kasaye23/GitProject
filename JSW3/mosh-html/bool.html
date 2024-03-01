@@ -6,7 +6,7 @@
     <title>Document</title>
     <script>
         function love(){
-            document.getElementById('susu').innerHTML="love baby"
+            document.getElementById('susu').innerHTML=" love baby"
         }
         function lovee(){
             document.getElementById('susu').innerHTML=""
@@ -55,8 +55,8 @@
 
 <p id="kas"></p>
 <button type="button"
- onmouseover="document.getElementById('kas').innerHTML='hello kassay'" 
-  onmouseout="document.getElementById('kas').innerHTML='see'"
+ onmouseover="document.getElementById('kas').innerHTML= '<h2> hello kassaye </h2>'" 
+  onmouseout="document.getElementById('kas').innerHTML=' you soon'"
   >click me </button>
 
 
@@ -64,6 +64,23 @@
 <button type="button" onmouseover="love()"
 onmouseout="lovee()"
 > moreeeee</button>
+<p id="con"></p>
+<script>
+   
+
+
+</script>
+<button type="button" onmouseover="document.getElementById('con').innerHTML=confirm" >conferm</button>
+
+
+<p id="con"></p>
+<script>
+    function kassaye() {
+        var result = confirm("Do you want to proceed?");
+        document.getElementById('con').innerHTML = result ? "User clicked OK!" : "User clicked Cancel!";
+    }
+</script>
+<button type="button" onmouseover="kassaye()">confirm</button>
 
 </body>
 </html>
