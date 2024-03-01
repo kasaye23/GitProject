@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .day-display {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .switch-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .switch-label {
+            margin-right: 10px;
+        }
+    </style>
+    <script>
+        function updateDay() {
+            // Get the current day
+            const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const currentDate = new Date();
+            const currentDay = days[currentDate.getDay()];
+
+            // Display the current day
+            document.getElementById('day-display').innerText = `Today is ${currentDay}`;
+        }
+    </script>
+</head>
+<body onload="updateDay()">
+    <div class="day-display" id="day-display">Loading...</div>
+    
+    <div class="switch-container">
+        <label for="daySwitch" class="switch-label">Show all days</label>
+        <input type="checkbox" id="daySwitch" onchange="updateDay()">
+    </div>
+</body>
+</html>

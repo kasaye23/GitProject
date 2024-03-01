@@ -16,6 +16,31 @@
     document.getElementById("demo1").innerHTML=Boolean(100 < 11);
 </script>
 <h2>JavaScript switch</h2>
-
+<p id="demo3">
+    <script>
+        let day ;
+        switch (new Date().getDay()) {
+            case 0:
+                day="monday"
+                break;
+                case 1:
+                day="tusday"
+                break;
+                case 2:
+                day="wensday"
+                break;
+                case 3:
+                day="tersday"
+                break;
+                case 4:
+                day="frayday"
+                break;
+                case 5:
+                day="saturday"
+                break;
+        }
+        document.getElementById("demo").innerHTML = "Today is " + day;
+    </script>
+</p>
 </body>
 </html>
