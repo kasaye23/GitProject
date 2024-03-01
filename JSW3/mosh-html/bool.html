@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function love(){
+            document.getElementById('susu').innerHTML="love baby"
+        }
+        function lovee(){
+            document.getElementById('susu').innerHTML=""
+        }
+
+
+    </script>
 </head>
 <body>
     <h1>JavaScript Booleans</h1>
@@ -42,5 +52,18 @@
         document.getElementById("demo").innerHTML = "Today is " + day;
     </script>
 </p>
+
+<p id="kas"></p>
+<button type="button"
+ onmouseover="document.getElementById('kas').innerHTML='hello kassay'" 
+  onmouseout="document.getElementById('kas').innerHTML='see'"
+  >click me </button>
+
+
+<p id="susu"></p>
+<button type="button" onmouseover="love()"
+onmouseout="lovee()"
+> moreeeee</button>
+
 </body>
 </html>
