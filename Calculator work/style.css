@@ -34,6 +34,7 @@ form.display{
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
+    border: 11px solid red;
 
 }
 form.display input{
