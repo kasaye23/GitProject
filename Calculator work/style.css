@@ -12,3 +12,8 @@
     align-items: center;
     justify-content: center;
 }
+.calculator{
+    padding: 20px;
+    background-color: #3a4452;
+    border-radius: 10px;
+}
