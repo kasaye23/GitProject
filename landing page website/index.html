@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio Website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--matrix-->
+    <canvas id="c"></canvas>
+    <script src="assets/script.js"></script>
+    <!--matrix-->
+    <!-- Navbar Start -->
+    <header class="p-4">
+      <nav class="navbar navbar-expand-lg container fixed-top">
+        <div class="container-fluid" id="Navbar">
+          <a class="navbar-brand" href="#Profile">Profile</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#About"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Skill">Skill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Portfolio">Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Profile -->
+    <section id="Profile" class="container mt-5">
+      <div>
+        <div class="section-title p-4">
+          <h1>Profile</h1>
+          <hr />
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img
+              src="data:image/jpeg;base64,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"
+              class="img-fluid p-3 mb-5"
+              alt="Profile"
+            />
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Full Stack Web Developer</h3>
+            <p class="fst-italic">I Working On Web Since 2021</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>Name:</strong>
+                    <span>Yasin Dehfuli</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>City:</strong>
+                    <span>Iran - Alborz</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>Phone:</strong>
+                    <span>+98-902-846-4066</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Date Of Birth:</strong>
+                    <span>7 July 1999</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
+                    <span>23</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Degree:</strong> <span>Junior</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                    <span>Ydehfuli[at]gmail.com</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Freelance:</strong>
+                    <span style="color: green">Available</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--                Section Skills -->
+            <span class="skill">
+              <!--                    GitHub-->
+              <a href="https://www.Github.com/YasinDehfuli" target="_blank"
+                ><button
+                  type="button"
+                  class="btn btn-dark col-md-4 col-sm-12 col-lg-3"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i> Github
+                </button></a
+              >
+              <!--                    Telegram-->
+              <a href="https://Telegram.Me/iYasin" target="_blank"
+                ><button
+                  type="button"
+                  class="btn btn-primary col-md-4 col-sm-12 col-lg-3"
+                >
+                  <i class="fab fa-telegram" aria-hidden="true"></i> Telegram
+                </button></a
+              >
+              <!--                    Twitter-->
+              <a href="https://www.Twitter.com/YasinDehfuli" target="_blank"
+                ><button
+                  type="button"
+                  class="btn btn-info col-md-3 col-sm-12 col-lg-3"
+                >
+                  <i class="fab fa-twitter" aria-hidden="true"></i> Twitter
+                </button></a
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Profile End-->
+
+    <!-- About Section -->
+    <section id="About" class="section-box container mt-4">
+      <div>
+        <div class="section-title p-4">
+          <h1>About</h1>
+          <hr />
+          <p class="p-3">
+            Hi I'm Yasin , ALways Trying To Learn New Things & New Program
+            Languages , I Start Developing Since 2021 With Front-End Languages
+            For Now , I Just , Doing Projects For Being Under Developing
+            Challanges And Creating A Good Resume For Myself , At All I Living
+            Code Every Second OF My Life ...
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About SEction End -->
+
+    <!-- Experience Section -->
+    <section id="Experience" class="section-box container mt-4">
+      <div>
+        <div class="section-title p-4">
+          <h1>Experience</h1>
+          <hr />
+          <p class="p-3">
+            For Now i got no Experiences With Being Any company , But Me and my
+            team work on some projects and upload it on git hub for resume And i
+            Hard Trying To Learn New Things And learning team work - I Create
+            Lots of Personal Projects And Team Projects - Creating Shops ,
+            Templates - Portfolio Pages - Doing Some Organisations On Git Hub At
+            All I Desigin And Create Front-End Web Pages And Do Backend For It ;
+            <br />
+            If You Want To See My Projects In GitHub Check Out My
+            <a
+              href="https://github.com/YasinDehfuli"
+              target="_blank"
+              style="color: black"
+              >GitHub</a
+            >
+            Account .
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Experience SEction End -->
+
+    <!-- Education Section -->
+    <section id="Education" class="section-box container mt-4">
+      <div>
+        <div class="section-title p-4">
+          <h1>Education</h1>
+          <hr />
+          <p class="p-3">
+            <span>2016 :</span> Graduate in Computer And Got Dipluma in 2016 For
+            ICDL , C# And HTML ; At All This is My start of Developing And
+            Coding And Start of Loving Code .
+          </p>
+          <br />
+          <p class="p-3">
+            <span>2018 :</span> Graduate In Software And Got Associate degree Of
+            Software Enginer & I learn SQL , DataBase , HTML CSS , until
+            2016-2018 .
+          </p>
+          <br />
+          <p class="p-3">
+            <span>2022 :</span> This is my new start in Developing and i start
+            Front-End Web Develop at the first half of the year & Start Back-End
+            Web Develop at the Second half of the year 2022 in Teran Centeral
+            Department To Be Going To Full Stack Web Developer .
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Education SEction End -->
+
+    <!-- Skill Section -->
+    <section id="Skill" class="section-box container mt-4">
+      <div>
+        <div class="section-title p-4">
+          <h1>Skills</h1>
+          <hr />
+
+          <div class="row">
+            <div class="col-12">
+              <h3 style="text-align: center">
+                Languages Libraries & FrameWorks ...
+              </h3>
+            </div>
+            <div class="col-6">
+              <div class="progress">
+                <div
+                  class="progress-bar bg-dark"
+                  role="progressbar"
+                  aria-label="Success example"
+                  style="width: 99%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <span>HTML</span> <i class="val"> 99%</i>
+              <div class="progress mt-2">
+                <div
+                  class="progress-bar bg-dark"
+                  role="progressbar"
+                  aria-label="Info example"
+                  style="width: 99%"
+                  aria-valuenow="99"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <span>CSS</span> <i class="val"> 99%</i>
+              <div class="progress mt-2">
+                <div
+                  class="progress-bar bg-dark"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  style="width: 80%"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <span>JavaScript</span> <i class="val"> 80%</i>
+              <div class="progress mt-2">
+                <div
+                  class="progress-bar bg-dark"
+                  role="progressbar"
+                  aria-label="Danger example"
+                  style="width: 85%"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <span>JQuery</span> <i class="val"> 85%</i>
+              <div class="progress mt-2">
+                <div
+                  class="progress-bar bg-dark"
+                  role="progressbar"
+                  aria-label="Danger example"
+                  style="width: 79%"
+                  aria-valuenow="79"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <span>PHP</span> <i class="val"> 79%</i>
+            </div>
+            <!--                part 2 col-->
+            <div class="col-6">
+              <div class="progress">
+                <div
+                  class="progress-bar bg-dark"
+                  role="progressbar"
+                  aria-label="Success example"
+                  style="width: 90%"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <span>Bootstrap</span> <i class="val"> 90%</i>
+              <div class="progress mt-2">
+                <div
+                  class="progress-bar bg-dark"
+                  role="progressbar"
+                  aria-label="Info example"
+                  style="width: 70%"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <span>VueJs</span> <i class="val"> 70%</i>
+              <div class="progress mt-2">
+                <div
+                  class="progress-bar bg-dark"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  style="width: 92%"
+                  aria-valuenow="92"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <span>Git</span> <i class="val"> 92%</i>
+              <div class="progress mt-2">
+                <div
+                  class="progress-bar bg-dark"
+                  role="progressbar"
+                  aria-label="Danger example"
+                  style="width: 80%"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <span>Semantic-Ui</span> <i class="val"> 80%</i>
+              <div class="progress mt-2">
+                <div
+                  class="progress-bar bg-dark"
+                  role="progressbar"
+                  aria-label="Danger example"
+                  style="width: 82%"
+                  aria-valuenow="82"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <span>Laravel</span> <i class="val"> 82%</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skill SEction End -->
+
+    <!-- Project Section -->
+    <section id="Portfolio" class="section-box container mt-4">
+      <div>
+        <div class="section-title p-4">
+          <h1>Portfolio</h1>
+          <hr />
+
+          <h1 style="text-align: center; color: white">
+            My <span>TimeLine</span>
+          </h1>
+          <div class="Pcontainer">
+            <div class="timeline-block timeline-block-right">
+              <div class="marker"></div>
+              <div class="timeline-content">
+                <h3>1999</h3>
+                <span>Born</span>
+                <p>I born in July 1999 in Iran,Karaj ;</p>
+              </div>
+            </div>
+
+            <div class="timeline-block timeline-block-left">
+              <div class="marker"></div>
+              <div class="timeline-content">
+                <h3>2006-2015</h3>
+                <span>Elementary & Technical School</span>
+                <p>
+                  2006-2011 this years i just started school & Learnt English
+                  and Paint , Learnt Swim and gymnastic & Between 2012-2015 - i
+                  went to Computer Technical school and graduated in computer
+                  school in 2015 I were being ready for university ;
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-block timeline-block-right">
+              <div class="marker"></div>
+              <div class="timeline-content">
+                <h3>2016-2018</h3>
+                <span>University</span>
+                <p>
+                  In 2016 New part of my story started , i Accepted Software
+                  Major in Mazandaran Provice Imam Khomeini University , And
+                  After 2 Year graduated in Software Associate degree Univercity
+                  ;
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-block timeline-block-left">
+              <div class="marker"></div>
+              <div class="timeline-content">
+                <h3>2018-2020</h3>
+                <span>Mandatory Military Service</span>
+                <p>
+                  After Graduate in University My Mandatory Military Service
+                  Started In Ministry As a Military Education Officer of Defence
+                  From 2018 To 2020 with The military grade of sergeant 1st
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-block timeline-block-right">
+              <div class="marker"></div>
+              <div class="timeline-content">
+                <h3>2020-Now</h3>
+                <span>Full Stack Web Developer</span>
+                <p>
+                  After Army , Was the best time for Me for strating Upgrade my
+                  Developing Skills , So First i start Front-End-Web Developing
+                  And start learning the Front-End Languages And Then i Start
+                  Back-End Web Developing And For Now i Trying To Creat Resume
+                  Projects & Hard Trying To Learn & Experience New Things in My
+                  developing . I Keep Going ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project SEction End -->
+
+    <!--Btn To Top-->
+    <section>
+      <div class="text-center mt-5">
+        <button
+          class="mb-5"
+          onclick="topFunction()"
+          id="myBtn"
+          title="Go to top"
+        >
+          Go To Top
+        </button>
+      </div>
+      <script>
+        // Get the button
+        let mybutton = document.getElementById('myBtn');
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.margin = 'auto';
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+    </section>
+    <!--Btn to Top End-->
+
+    <!-- Footer-->
+    <footer id="footer" class="container">
+      <div class="container">
+        <h3>Contact Me</h3>
+        <div class="social-links">
+          <a href="mailto:ydehfuli@gmail.com" target="_blank" class="gmail"
+            ><i class="fab fa-google"></i
+          ></a>
+          <a
+            href="https://www.Linkdin.com/YasinDehfuli"
+            target="_blank"
+            class="Linkdin"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.Telegram.me/YasinDehfuli"
+            target="_blank"
+            class="telegram"
+            ><i class="fab fa-telegram"></i
+          ></a>
+          <a
+            href="https://www.Twitter.com/YasinDehfuli"
+            target="_blank"
+            class="twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.github.com/YasinDehfuli"
+            target="_blank"
+            class="linkedin"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <div class="copyright">
+          2022 &copy; Portfolio <strong><span>Nisay</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by
+          <a href="https://github.com/YasinDehfuli" target="_blank">Nisay</a>
+        </div>
+      </div>
+    </footer>
+    <!--Footer And-->
+    <script src="script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js'></script>
+  </body>
+  <!-- https://Github.com/YasinDehfuli -->
+</html>
