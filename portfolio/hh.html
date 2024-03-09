@@ -41,6 +41,18 @@
         <button type="button" onclick="withdraw()">Withdraw</button>
     </form>
 
-   
+    <script>
+        function deposit() {
+            var amount = parseFloat(document.getElementById("amount").value);
+            if (!isNaN(amount) && amount > 0) {
+                // Perform deposit logic (update balance, log transaction, etc.)
+                alert("Deposited $" + amount);
+            } else {
+                alert("Invalid deposit amount.");
+            }
+        }
+
+        
+    </script>
 </body>
 </html>
