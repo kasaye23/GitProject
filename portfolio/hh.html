@@ -52,7 +52,15 @@
             }
         }
 
-        
+        function withdraw() {
+            var amount = parseFloat(document.getElementById("amount").value);
+            if (!isNaN(amount) && amount > 0) {
+                // Perform withdrawal logic (update balance, log transaction, etc.)
+                alert("Withdrawn $" + amount);
+            } else {
+                alert("Invalid withdrawal amount.");
+            }
+        }
     </script>
 </body>
 </html>
