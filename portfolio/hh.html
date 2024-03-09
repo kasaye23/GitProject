@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Banking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input, button {
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple Banking System</h2>
+
+    <div id="account-details">
+        <p><strong>Account Holder:</strong> John Doe</p>
+        <p><strong>Account Number:</strong> 123456789</p>
+        <p><strong>Balance:</strong> $1000</p>
+    </div>
+
+    <form id="transaction-form">
+        <label for="amount">Enter Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        <br>
+        <button type="button" onclick="deposit()">Deposit</button>
+        <button type="button" onclick="withdraw()">Withdraw</button>
+    </form>
+
+   
+</body>
+</html>
